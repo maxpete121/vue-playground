@@ -37,7 +37,7 @@
           </p>
           <div class="red">
             <!-- add a class binding attribute to the p tag that references the state isActive value -->
-            <p>This text will turn green on active</p>
+            <p :class="{active: state.isActive}">This text will turn green on active</p>
           </div>
         </div>
       </div>
@@ -56,7 +56,7 @@ export default {
       //create a property called myName and set its value to "type your name here"
       message: "Super secret message here!",
       //change isActive to true
-      isActive: false,
+      isActive: true,
     });
     return { state };
   },
